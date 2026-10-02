@@ -32,7 +32,7 @@ public class YamlUtils {
             Object value = source.get(key);
             if(value instanceof Map){
                 Map<String,Object> submap = (Map<String,Object>) value;
-                converTo(submap,prefix+key+".",plain);
+                converTo(submap,key+".",plain);
             }else if(value instanceof List){
                 plain.put(prefix+key,value);
             }else{
