@@ -1,6 +1,5 @@
-package com.aliyun.oss;
+package com.aliyun.oss.io;
 
-import com.sun.jdi.Type;
 import org.jetbrains.annotations.Nullable;
 
 import java.time.*;

@@ -1,6 +1,6 @@
 package com.aliyun.oss.utils;
 
-import com.aliyun.oss.InputStreamCallback;
+import com.aliyun.oss.io.InputStreamCallback;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

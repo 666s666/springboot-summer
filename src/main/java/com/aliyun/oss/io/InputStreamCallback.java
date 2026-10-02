@@ -1,4 +1,4 @@
-package com.aliyun.oss;
+package com.aliyun.oss.io;
 
 import java.io.IOException;
 import java.io.InputStream;

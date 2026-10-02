@@ -1,6 +1,5 @@
-package com.aliyun.oss;
+package com.aliyun.oss.io;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.net.URI;
