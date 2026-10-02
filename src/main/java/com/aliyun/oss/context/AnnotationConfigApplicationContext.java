@@ -59,7 +59,7 @@ public class AnnotationConfigApplicationContext {
                     throw new BeanDefinitionException("@Component class" + clazz.getName() + "must not be private");
                 }
                 String beanName = ClassUtils.getBeanName(clazz);
-                BeanDefinition bdf = new BeanDefinition(beanName,clazz,getSuitableConstructor(clazz),getOrder(),clazz.isAnnotationPresent(Primary.class),
+                BeanDefinition bdf = new BeanDefinition(beanName,clazz,getSuitableConstructor(clazz),getOrder(clazz),clazz.isAnnotationPresent(Primary.class),
                         null,null,ClassUtils.findAnnotationMethod(clazz,PostConstruct.class),
                         ClassUtils.findAnnotationMethod(clazz,PreDestroy.class));
                         addBeanDefinition(map,bdf);
