@@ -198,12 +198,12 @@ public class AnnotationConfigApplicationContext {
         }
         return bd;
     }
-    public List<BeanDefinition> findBeanDefinition(Class<?> type){
+    public List<BeanDefinition> findBeanDefinitions(Class<?> type){
         return this.beans.values().stream().filter(res -> type.isAssignableFrom(res.getBeanClass())).sorted().collect(Collectors.toList());
     }
     @Nullable
     public BeanDefinition findBeanDefinition(Class<?> type){
-        List<BeanDefinition> list = findBeanDefinition(type);
+        List<BeanDefinition> list = findBeanDefinitions(type);
         if(list.isEmpty()){
             return null;
         }
